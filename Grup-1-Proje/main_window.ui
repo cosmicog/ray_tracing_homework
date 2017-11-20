@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Ana_Pencere</class>
- <widget class="QMainWindow" name="Ana_Pencere">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Ana_Pencere</string>
+   <string>Main Window</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Seçilen Dosya:
+     <string>Selected File:
 ....................</string>
     </property>
    </widget>
@@ -41,8 +41,8 @@
      </rect>
     </property>
     <property name="text">
-     <string>Görüntülemeyi 
-Başlat</string>
+     <string>Start 
+Process</string>
     </property>
    </widget>
    <widget class="QSlider" name="horizontalSlider">
@@ -153,7 +153,7 @@ Başlat</string>
      <x>0</x>
      <y>0</y>
      <width>569</width>
-     <height>20</height>
+     <height>19</height>
     </rect>
    </property>
    <property name="font">
@@ -163,7 +163,7 @@ Başlat</string>
    </property>
    <widget class="QMenu" name="menuHakk_nda">
     <property name="title">
-     <string>Hakkında</string>
+     <string>About</string>
     </property>
     <addaction name="actionOrhan_Gazi_Hafif"/>
     <addaction name="actionLokman_Dursun"/>
@@ -172,7 +172,7 @@ Başlat</string>
    </widget>
    <widget class="QMenu" name="menuKaynak_Dosya_Se_in">
     <property name="title">
-     <string>Sahne Dosyası Seçin</string>
+     <string>Select Stage File</string>
     </property>
     <addaction name="actionC0"/>
     <addaction name="actionC1"/>
@@ -215,8 +215,11 @@ Başlat</string>
    </property>
   </action>
   <action name="actionAsdf">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>C2</string>
@@ -247,7 +250,7 @@ Başlat</string>
   </action>
   <action name="actionTe_ekk_rler_pek_Abas_kele_Turgut">
    <property name="text">
-    <string>Teşekkürler: İpek Abasıkeleş Turgut</string>
+    <string>Special Thanks: İpek Abasıkeleş Turgut</string>
    </property>
   </action>
   <action name="actionT1">
@@ -300,7 +303,7 @@ Başlat</string>
   </action>
   <action name="actionBilgisayar_n_zdan_Se_in">
    <property name="text">
-    <string>Bilgisayarınızdan Seçin</string>
+    <string>Select From Other Location...</string>
    </property>
   </action>
  </widget>

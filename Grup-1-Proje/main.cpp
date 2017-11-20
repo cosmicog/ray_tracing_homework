@@ -1,11 +1,11 @@
-#include "ana_pencere.h"
+#include "main_window.h"
 #include <QApplication>
 #include <QtGui>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Ana_Pencere w;
+    MainWindow w;
     w.show();
     
     return a.exec();

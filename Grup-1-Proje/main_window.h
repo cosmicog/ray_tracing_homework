@@ -1,21 +1,22 @@
-#ifndef ANA_PENCERE_H
-#define ANA_PENCERE_H
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
 
 #include <QMainWindow>
 #include "math.h"
 
-namespace Ui {
-class Ana_Pencere;
+namespace Ui
+{
+class MainWindow;
 }
 
-class Ana_Pencere : public QMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
-    
+
 public:
-    explicit Ana_Pencere(QWidget *parent = 0);
-    ~Ana_Pencere();
-    
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -27,8 +28,10 @@ private slots:
 
     void on_actionC1_changed();
 
+    void on_actionAsdf_changed();
+
 private:
-    Ui::Ana_Pencere *ui;
+    Ui::MainWindow *ui;
 };
 
-#endif // ANA_PENCERE_H
+#endif // MAIN_WINDOW_H
