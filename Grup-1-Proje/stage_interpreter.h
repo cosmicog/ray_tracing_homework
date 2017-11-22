@@ -29,9 +29,9 @@ float DIFFUSE[3];
 float REFLECTIVE;
 float SPECULAR[4];
 
-float TRIANGLES [32] [20]; // ::: [Üçgen Numarası] [koordinatlar(9) - ambient(3) rgb - diffuse(3) rgb - reflective(1) k - speküler(4) rgbp] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
-float SPHERES [32] [20]; // 15'e kadar dolu // ::: [Küre Numarası] [yarıçap uzunluğu{0} ve koordinatlar{1-3 arası}(4)- ambient(3) rgb - diffuse(3) rgb - reflective(1) k - speküler(4) rgbp] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
-float LIGHTS [32] [20]; // 6'ya kadar dolu // ::: [Işık numarası] [koordinatlar(3) - renk(3)] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
+float TRIANGLES [256] [20]; // ::: [Üçgen Numarası] [koordinatlar(9) - ambient(3) rgb - diffuse(3) rgb - reflective(1) k - speküler(4) rgbp] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
+float SPHERES [256] [20]; // 15'e kadar dolu // ::: [Küre Numarası] [yarıçap uzunluğu{0} ve koordinatlar{1-3 arası}(4)- ambient(3) rgb - diffuse(3) rgb - reflective(1) k - speküler(4) rgbp] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
+float LIGHTS [256] [20]; // 6'ya kadar dolu // ::: [Işık numarası] [koordinatlar(3) - renk(3)] ::: Sınırlandırma İşletim Sisteminin Bellek adreslemesi için mecburi
 
 QString supplyStream(QString file_name)
 {
