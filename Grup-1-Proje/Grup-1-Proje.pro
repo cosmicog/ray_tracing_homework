@@ -12,11 +12,13 @@ TARGET = Grup-1-Proje
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        ana_pencere.cpp
+SOURCES += main.cpp \
+    main_window.cpp
 
-HEADERS  += ana_pencere.h \
-    isin_izleme.h \
-    sahne_yorumlayici.h
+HEADERS  += \
+    ray_tracing.h \
+    stage_interpreter.h \
+    main_window.h
 
-FORMS    += ana_pencere.ui
+FORMS    += \
+    main_window.ui
