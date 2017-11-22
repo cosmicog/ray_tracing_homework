@@ -17,7 +17,7 @@ MainWindow::~MainWindow()
 }
 
 int set = 0;
-const char *const_char_stage = ".............................................................................................................................";
+char *const_char_stage = ".............................................................................................................................";
 
 void MainWindow::on_pushButton_clicked()
 {
@@ -43,7 +43,6 @@ void MainWindow::on_pushButton_clicked()
         else if (strcmp(const_char_stage, "c2.txt") == 0) pix = QPixmap("c2.txt.png");
         else ui->statusBar->showMessage("Wrong file?", 6000);
         ui->label_2->setPixmap(pix);
-        set = 0;
     }
 }
 
