@@ -1,0 +1,484 @@
+# one white triangle
+
+fov 60
+light 0 0 2 .1 .8 1
+background 0.05 0.1 0.2
+
+diffuse 0.8 0.8 0.8
+ambient 0 0 0
+specular 0 0 0 1
+reflective 0
+
+
+
+# 1
+# triangle and top part
+begin
+vertex -0.8 0.4 -2
+vertex -0.7 0.4 -2
+vertex -0.8 -0.2 -2
+end
+begin
+vertex -0.7 0.4 -2
+vertex -0.8 0.4 -1.8
+vertex -0.8 0.4 -2
+end
+begin
+vertex -0.7 0.4 -2
+vertex -0.8 0.4 -1.8
+vertex -0.7 0.4 -1.8
+end
+
+# makes above triangle square
+begin
+vertex -0.7 0.4 -2
+vertex -0.8 -0.2 -2
+vertex -0.7 -0.2 -2
+end
+
+# side of first triangle
+begin
+vertex -0.8 0.4 -2
+vertex -0.8 -0.2 -2
+vertex -0.8 0.4 -1.8
+end
+begin
+vertex -0.8 0.4 -1.8
+vertex -0.8 -0.2 -2
+vertex -0.8 -0.2 -1.8
+end
+
+
+
+# 2
+# triangle and top of it
+begin
+vertex -0.8 -0.2 -2
+vertex -0.5 -0.2 -2
+vertex -0.8 -0.3 -2
+end
+
+# makes above triangle square
+begin
+vertex -0.8 -0.3 -2
+vertex -0.5 -0.3 -2
+vertex -0.5 -0.2 -2
+end
+
+# side of first triangle
+begin
+vertex -0.8 -0.2 -2
+vertex -0.8 -0.3 -2
+vertex -0.8 -0.2 -1.8
+end
+begin
+vertex -0.8 -0.2 -1.8
+vertex -0.8 -0.3 -2
+vertex -0.8 -0.3 -1.8
+end
+
+# below of second triangle, points from second triangle
+begin
+vertex -0.8 -0.3 -2
+vertex -0.5 -0.3 -2
+vertex -0.8 -0.3 -1.8
+end
+begin
+vertex -0.5 -0.3 -2
+vertex -0.5 -0.3 -1.8
+vertex -0.8 -0.3 -1.8
+end
+
+
+
+# 3
+# triangle and top of it
+begin
+vertex -0.4 0.4 -2
+vertex -0.1 0.4 -2
+vertex -0.4 0.3 -2
+end
+begin
+vertex -0.1 0.4 -2
+vertex -0.4 0.4 -1.8
+vertex -0.4 0.4 -2
+end
+begin
+vertex -0.1 0.4 -2
+vertex -0.4 0.4 -1.8
+vertex -0.1 0.4 -1.8
+end
+
+# makes above triangle square
+begin
+vertex -0.4 0.3 -2
+vertex -0.1 0.3 -2
+vertex -0.1 0.4 -2
+end
+
+# side of first triangle
+begin
+vertex -0.4 0.4 -2
+vertex -0.4 0.3 -2
+vertex -0.4 0.4 -1.8
+end
+begin
+vertex -0.4 0.4 -1.8
+vertex -0.4 0.3 -2
+vertex -0.4 0.3 -1.8
+end
+
+
+
+# 4
+# triangle
+begin
+vertex -0.4 0.3 -2
+vertex -0.3 0.3 -2
+vertex -0.4 -0.2 -2
+end
+
+# makes above triangle square
+begin
+vertex -0.4 -0.2 -2
+vertex -0.3 -0.2 -2
+vertex -0.3 0.3 -2
+end
+
+# side of first triangle
+begin
+vertex -0.4 0.3 -2
+vertex -0.4 -0.2 -2
+vertex -0.4 0.3 -1.8
+end
+begin
+vertex -0.4 0.3 -1.8
+vertex -0.4 -0.2 -2
+vertex -0.4 -0.2 -1.8
+end
+
+# 5
+# triangle
+begin
+vertex -0.3 0.1 -2
+vertex -0.2 0.1 -2
+vertex -0.3 0 -2
+end
+
+# makes above triangle square
+begin
+vertex -0.3 0 -2
+vertex -0.2 0 -2
+vertex -0.2 0.1 -2
+end
+
+
+
+# 6
+# triangle
+begin
+vertex -0.4 -0.2 -2
+vertex -0.1 -0.2 -2
+vertex -0.4 -0.3 -2
+end
+
+# side of first triangle
+begin
+vertex -0.4 -0.2 -2
+vertex -0.4 -0.3 -2
+vertex -0.4 -0.2 -1.8
+end
+begin
+vertex -0.4 -0.2 -1.8
+vertex -0.4 -0.3 -2
+vertex -0.4 -0.3 -1.8
+end
+
+# makes above triangle square
+begin
+vertex -0.4 -0.3 -2
+vertex -0.1 -0.3 -2
+vertex -0.1 -0.2 -2
+end
+
+# below of second triangle, points from second triangle
+begin
+vertex -0.4 -0.3 -2
+vertex -0.1 -0.3 -2
+vertex -0.4 -0.3 -1.8
+end
+begin
+vertex -0.1 -0.3 -2
+vertex -0.1 -0.3 -1.8
+vertex -0.4 -0.3 -1.8
+end
+
+
+
+# 7
+# triangle and top of it
+begin
+vertex 0.1 0.4 -2
+vertex 0.2 0.4 -2
+vertex 0.1 -0.2 -2
+end
+begin
+vertex 0.2 0.4 -2
+vertex 0.1 0.4 -1.8
+vertex 0.1 0.4 -2
+end
+begin
+vertex 0.2 0.4 -2
+vertex 0.1 0.4 -1.8
+vertex 0.2 0.4 -1.8
+end
+
+# makes above triangle square
+begin
+vertex 0.1 -0.2 -2
+vertex 0.2 -0.2 -2
+vertex 0.2 0.4 -2
+end
+
+# side of first triangle
+begin
+vertex 0.2 0.1 -2
+vertex 0.2 -0.2 -2
+vertex 0.2 0.1 -1.8
+end
+begin
+vertex 0.2 0.1 -1.8
+vertex 0.2 -0.2 -2
+vertex 0.2 -0.2 -1.8
+end
+
+
+
+# 8
+# triangle
+begin
+vertex 0.2 0.1 -2
+vertex 0.4 0.1 -2
+vertex 0.2 0.4 -2
+end
+
+# side of triangle
+begin
+vertex 0.2 0.4 -2
+vertex 0.4 0.1 -2
+vertex 0.4 0.1 -1.8
+end
+begin
+vertex 0.2 0.4 -2
+vertex 0.2 0.4 -1.8
+vertex 0.4 0.1 -1.8
+end
+
+
+
+# 9
+# triangle
+begin
+vertex 0.3 0.1 -2
+vertex 0.4 0.1 -2
+vertex 0.3 -0.3 -2
+end
+
+# makes above triangle square
+begin
+vertex 0.3 -0.3 -2
+vertex 0.4 -0.3 -2
+vertex 0.4 0.1 -2
+end
+
+# side of second triangle
+begin
+vertex 0.4 0.1 -2
+vertex 0.4 -0.3 -2
+vertex 0.4 0.1 -1.8
+end
+begin
+vertex 0.4 0.1 -1.8
+vertex 0.4 -0.3 -2
+vertex 0.4 -0.3 -1.8
+end
+
+
+# 10
+# triangle
+begin
+vertex 0.1 -0.2 -2
+vertex 0.4 -0.2 -2
+vertex 0.1 -0.3 -2
+end
+
+# makes above triangle square
+begin
+vertex 0.1 -0.3 -2
+vertex 0.4 -0.3 -2
+vertex 0.4 -0.2 -2
+end
+
+# below of second triangle, points from second triangle
+begin
+vertex 0.1 -0.3 -2
+vertex 0.4 -0.3 -2
+vertex 0.1 -0.3 -1.8
+end
+begin
+vertex 0.4 -0.3 -2
+vertex 0.1 -0.3 -1.8
+vertex 0.4 -0.3 -1.8
+end
+
+
+
+# 11
+# triangle
+begin
+vertex 0.5 -0.1 -2
+vertex 0.7 -0.1 -2
+vertex 0.7 0.4 -2
+end
+
+
+
+# 12
+# triangle
+begin
+vertex 0.5 -0.1 -2
+vertex 0.6 -0.1 -2
+vertex 0.5 -0.3 -2
+end
+
+# makes above triangle square
+begin
+vertex 0.5 -0.3 -2
+vertex 0.6 -0.3 -2
+vertex 0.6 -0.1 -2
+end
+
+# side of second triangle
+begin
+vertex 0.6 -0.1 -2
+vertex 0.6 -0.3 -2
+vertex 0.6 -0.1 -1.8
+end
+begin
+vertex 0.6 -0.1 -1.8
+vertex 0.6 -0.3 -2
+vertex 0.6 -0.3 -1.8
+end
+
+# below of second triangle, points from second triangle
+begin
+vertex 0.5 -0.3 -2
+vertex 0.6 -0.3 -2
+vertex 0.5 -0.3 -1.8
+end
+begin
+vertex 0.6 -0.3 -2
+vertex 0.6 -0.3 -1.8
+vertex 0.5 -0.3 -1.8
+end
+
+# 13
+
+# triangle and top of it
+begin
+vertex 0.7 0.4 -2
+vertex 0.8 0.4 -2
+vertex 0.7 -0.3 -2
+end
+begin
+vertex 0.8 0.4 -2
+vertex 0.7 0.4 -1.8
+vertex 0.7 0.4 -2
+end
+begin
+vertex 0.8 0.4 -2
+vertex 0.7 0.4 -1.8
+vertex 0.8 0.4 -1.8
+end
+
+# makes above triangle square
+begin
+vertex 0.7 -0.3 -2
+vertex 0.8 -0.3 -2
+vertex 0.8 0.4 -2
+end
+
+# side of second triangle
+begin
+vertex 0.8 0.4 -2
+vertex 0.8 -0.3 -2
+vertex 0.8 0.4 -1.8
+end
+begin
+vertex 0.8 0.4 -1.8
+vertex 0.8 -0.3 -2
+vertex 0.8 -0.3 -1.8
+end
+
+# below of second triangle, points from second triangle
+begin
+vertex 0.7 -0.3 -2
+vertex 0.8 -0.3 -2
+vertex 0.7 -0.3 -1.8
+end
+begin
+vertex 0.8 -0.3 -2
+vertex 0.8 -0.3 -1.8
+vertex 0.7 -0.3 -1.8
+end
+
+
+
+
+# D
+begin
+vertex 0.05 0.13 -2
+vertex 0.05 0.05 -2
+vertex 0 0.1 -2
+end
+
+# A
+begin
+vertex -0.05 0.13 -2
+vertex -0.05 0.05 -2
+vertex 0 0.1 -2
+end
+
+# B
+begin
+vertex 0 0.1 -2
+vertex -0.05 0.05 -2
+vertex 0 0 -2
+end
+
+# C
+begin
+vertex 0 0.1 -2
+vertex 0.05 0.05 -2
+vertex 0 0 -2
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+write
