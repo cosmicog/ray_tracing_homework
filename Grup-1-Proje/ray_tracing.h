@@ -219,8 +219,8 @@ public:
 
 float isRayCrossingWithPlane(Vector3d r0, Vector3d rD, Triangle tr, Light light)
 {
-    float D = -(    scalarProduct(tr.v0, tr.normal)    );
-    float T = -(    (scalarProduct(r0, tr.normal) + D)  /  scalarProduct(rD, tr.normal)   );
+    float D = -( scalarProduct(tr.v0, tr.normal) );
+    float T = -( (scalarProduct(r0, tr.normal) + D) / scalarProduct(rD, tr.normal) );
 
     if (T > 0)
     {
@@ -295,8 +295,7 @@ void rayTraceTriangles(Light light)
                     TRIANGLE.iDIF = iDIF;
                     TRIANGLE.iSPEC = iSPEC;
                 }
-
-                if ( t < SMALLEST_T && SMALLEST_T > 0 && t != 0.0)
+                else if ( t < SMALLEST_T && SMALLEST_T > 0 && t != 0.0)
                 {
                     SMALLEST_T = t;
                     T_TRIANGLE_IND = tria.triangle_id;
